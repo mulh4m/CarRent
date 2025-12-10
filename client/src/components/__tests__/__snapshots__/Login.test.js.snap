@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Match the Login UI snapshot... 1`] = `
+<div>
+  <div>
+    <div
+      class="floor container"
+    >
+      <div
+        class="div-row row"
+      >
+        <div
+          class="div-col  col-md-6"
+        >
+          <form
+            class="div-form "
+          >
+            <div
+              style="text-align: center;"
+            >
+              <img
+                alt="Logo"
+                class="img-fluid"
+                src="logocar.png"
+                style="height: 200px;"
+              />
+            </div>
+            <div
+              class="mb-3"
+            >
+              <input
+                class="form-control "
+                name="email"
+                placeholder="Email"
+                type="email"
+              />
+            </div>
+            <div
+              class="mb-3"
+            >
+              <input
+                class="form-control "
+                name="password"
+                placeholder="Password"
+                type="password"
+              />
+            </div>
+            <div
+              class="mb-3"
+              style="text-align: center;"
+            >
+              <button
+                class="form-control btn btn-secondary"
+                style="background-color: rgb(170, 196, 255); color: black; width: 100px;"
+                type="button"
+              >
+                Sign In
+              </button>
+            </div>
+            <div
+              class="text-center mb-3"
+            >
+              <label
+                class="form-label"
+              >
+                No Account? 
+                <a
+                  class="link"
+                  href="/register"
+                >
+                  Sign Up 
+                </a>
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

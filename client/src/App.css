@@ -1,0 +1,347 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.background{
+  background-image: url("./assets/carimg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+}
+
+.form-control:focus::placeholder {
+    opacity: 0.5;
+}
+
+
+.form-control.error-placeholder::placeholder {
+    color: red;
+    font-weight: bold;
+}
+
+.div-row{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+}
+
+.div-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #AAC4FF;
+}
+
+.div-form{
+  background-color: white;
+  border-radius: 15px;
+  border-width: thin;
+  margin: 10px;
+  width: 60%;
+  height: 100%;
+  border-color: black;
+}
+
+.logocar{
+  padding-right: 100px;
+  align-items: center;
+}
+
+.navigation{
+  background-color: white;
+  height: 75px;
+}
+
+.navs{
+  padding: 10px;
+}
+
+.footer{
+  background-color: white;
+  height: 180px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+  padding-top: 20px;
+}
+.profilepic{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.pic{
+  padding: 40px;
+  text-align: center;
+  height:"150px"
+}
+.login{
+  align-items:end;
+}
+
+.link{
+  text-decoration: none;
+}
+
+.link:hover{
+  color : #AAC4FF
+}
+
+.text{
+  text-align: left;
+  font-size: 15px;
+  justify-content: left;
+  color: grey;
+  padding-top: 15px;
+}
+
+.text-contact{
+  text-align: left;
+  font-size: 15px;
+  justify-content: left;
+  color: grey;
+  padding-top: 10px;
+}
+
+.header{
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.col{
+  margin-right: 30px;
+}
+
+.social{
+  height: 30px;
+  text-align: left;
+}
+
+.logocar{
+  padding-left: 270px;
+}
+
+.floor{
+  padding-top: 20px;
+}
+
+.profile{
+  padding-right: 270px;
+}
+
+.buttonprofile{
+  background-color: transparent;
+}
+
+.form-card{
+  background-color: white;
+  border-radius: 15px;
+  border-width: thin;
+  margin: 10px;
+  width: 60%;
+  height: 100%;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.row-input{
+  padding: 20px;
+}
+
+.row-card{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
+
+.row-card-search{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.card{
+  border: none;
+  padding: 20px;
+}
+
+.dropdown{
+  height: 50px;
+}
+
+.admin-dashboard{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.admin-card{
+  background-color: rgb(221, 221, 221);
+  text-align: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.search-cars{
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.thank-container {
+  background: url("./assets/carimg.png") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.thank-box {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+}
+ 
+.thank-box h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+ 
+.thank-box p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+ 
+.thank-box button {
+  padding: 10px 20px;
+  background-color: #4b73ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+ 
+.thank-box button:hover {
+  background-color: #3a5be0;
+}
+.payment-container {
+  background: url("./assets/carimg.png") no-repeat center center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.payment-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+ 
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+ 
+.method {
+  flex: 1;
+  margin: 3px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ 
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+ 
+.input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+ 
+ 
+.pay-btn {
+  width: 100%;
+  background-color: #4b73ff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.messageError{
+  color: red;
+  font-weight: bold;
+}
