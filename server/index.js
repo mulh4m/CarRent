@@ -11,6 +11,8 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 10000;
 
+app.get("/", (req, res) => res.send("Hello"));
+
 try{
     const conStr="mongodb+srv://admin:ahmed@cluster0.i8mv0bl.mongodb.net/CarRentDB?appName=Cluster0";
     mongoose.connect(conStr);
@@ -135,3 +137,4 @@ app.put("/updateCar/", async (req, res) => {
 
 
  
+
