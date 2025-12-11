@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const getCar=createAsyncThunk("cars/getCar",async()=>{
     try{
-        const response=await axios.get("https://carrent-73b7.onrender.com/getCar");
+        const response=await axios.get("https://carrent-1.onrender.com//getCar");
         return response.data.cars;
     }
     catch(error){
@@ -13,7 +13,7 @@ export const getCar=createAsyncThunk("cars/getCar",async()=>{
 
 export const saveCar=createAsyncThunk("cars/addCar",async(pdata)=>{
     try{
-        const response=await axios.post("https://carrent-73b7.onrender.com/addCar",pdata);
+        const response=await axios.post("https://carrent-1.onrender.com//addCar",pdata);
         return response.data.message;
     }
     catch(error){
@@ -23,7 +23,7 @@ export const saveCar=createAsyncThunk("cars/addCar",async(pdata)=>{
 
 export const updateCar=createAsyncThunk("cars/updateCar",async(pdata)=>{
     try{
-        const response=await axios.put("https://carrent-73b7.onrender.com/updateCar",pdata);
+        const response=await axios.put("https://carrent-1.onrender.com//updateCar",pdata);
         return response.data;
     }
     catch(error){
@@ -34,7 +34,7 @@ export const updateCar=createAsyncThunk("cars/updateCar",async(pdata)=>{
 
 export const deleteCar=createAsyncThunk("cars/deleteCar",async(id)=>{
     try{
-        const response=await axios.delete(`https://carrent-73b7.onrender.com/deleteCar/${id}`);
+        const response=await axios.delete(`https://carrent-1.onrender.com//deleteCar/${id}`);
         return response;
     }
     catch(error){
@@ -106,6 +106,7 @@ export const CarSlice = createSlice({
 });
 
 export default CarSlice.reducer;
+
 
 
 
