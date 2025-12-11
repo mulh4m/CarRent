@@ -34,7 +34,7 @@ export const updateCar=createAsyncThunk("cars/updateCar",async(pdata)=>{
 
 export const deleteCar=createAsyncThunk("cars/deleteCar",async(id)=>{
     try{
-        const response=await axios.delete(`https://carrent-1-pgml.onrender.com/deleteCar/${id}`);
+        const response=await axios.delete(`https://carrent-73b7.onrender.com/deleteCar/${id}`);
         return response;
     }
     catch(error){
@@ -106,5 +106,6 @@ export const CarSlice = createSlice({
 });
 
 export default CarSlice.reducer;
+
 
 
