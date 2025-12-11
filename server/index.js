@@ -4,6 +4,15 @@ import mongoose from 'mongoose';
 import UserModel from './models/UserModel.js';
 import bcrypt from 'bcrypt';
 import CarModel from './models/CarModel.js';
+import path from "path";
+
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, "/client/build")));
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "/client/build/index.html"));
+});
 
 const app=express();
 app.use(cors());
@@ -137,4 +146,5 @@ app.put("/updateCar/", async (req, res) => {
 
 
  
+
 
