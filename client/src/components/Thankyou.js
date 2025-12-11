@@ -8,10 +8,10 @@ const ThankYouPage = () => {
   const navigate = useNavigate();
   const email = useSelector((state) => state.users.user.email);
 
-    /*useEffect(() => {
+    useEffect(() => {
       if (!email)
         navigate("/");
-    }, [email]);*/
+    }, [email]);
 
   return (
     <div>
@@ -30,3 +30,4 @@ const ThankYouPage = () => {
 };
 
 export default ThankYouPage;
+
