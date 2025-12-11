@@ -4,23 +4,10 @@ import mongoose from 'mongoose';
 import UserModel from './models/UserModel.js';
 import bcrypt from 'bcrypt';
 import CarModel from './models/CarModel.js';
-import path from "path";
-
-const __dirname = path.resolve();
-
-app.use(express.static(path.join(__dirname, "/client/build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/client/build/index.html"));
-});
 
 const app=express();
 app.use(cors());
 app.use(express.json());
-
-const PORT = process.env.PORT || 10000;
-
-app.get("/", (req, res) => res.send("Hello"));
 
 try{
     const conStr="mongodb+srv://admin:ahmed@cluster0.i8mv0bl.mongodb.net/CarRentDB?appName=Cluster0";
@@ -31,8 +18,8 @@ catch(error){
     console.log("Database connection error.."+error);
 }
 
-app.listen(PORT,()=>{
-    console.log(`Server connected at port number ${PORT}`)
+app.listen(5000,()=>{
+    console.log("Server connected at port number 5000..")
 })
 
 app.post("/login",async(req,res)=>{
@@ -144,7 +131,4 @@ app.put("/updateCar/", async (req, res) => {
     }
 });
 
-
  
-
-
