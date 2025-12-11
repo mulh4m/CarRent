@@ -9,6 +9,8 @@ const app=express();
 app.use(cors());
 app.use(express.json());
 
+const PORT = process.env.PORT || 10000;
+
 try{
     const conStr="mongodb+srv://admin:ahmed@cluster0.i8mv0bl.mongodb.net/CarRentDB?appName=Cluster0";
     mongoose.connect(conStr);
@@ -18,8 +20,8 @@ catch(error){
     console.log("Database connection error.."+error);
 }
 
-app.listen(5000,()=>{
-    console.log("Server connected at port number 5000..")
+app.listen(PORT,()=>{
+    console.log(`Server connected at port number ${PORT}`)
 })
 
 app.post("/login",async(req,res)=>{
@@ -130,5 +132,6 @@ app.put("/updateCar/", async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
+
 
  
