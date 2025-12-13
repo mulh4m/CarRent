@@ -6,6 +6,7 @@ import { Link, useNavigate } from "react-router-dom";
 import pass from '../assets/pass.png'
 import door from '../assets/door.png'
 import transmission from '../assets/transmission.png'
+import { IoChevronBackSharp } from "react-icons/io5";
 
 const CarList = () => {
   const dispatch = useDispatch();
@@ -37,6 +38,10 @@ const CarList = () => {
     }
   }
 
+  const handleBack = ()=>{
+    navigate("/home")
+  }
+
   return (
     <div>
       <Container className='floor'>
@@ -44,6 +49,11 @@ const CarList = () => {
           <Col md="3" style={{padding:"10px"}}>
             <Card className="card">
               <Row>
+                <Button 
+                  style={{backgroundColor:"transparent", color:"black", border:"none"}}
+                  onClick={handleBack}>
+                  <IoChevronBackSharp/>
+                </Button>
                 <Col><h4>Filter</h4></Col>
                 <Col><Link>Reset All</Link></Col>
               </Row>
