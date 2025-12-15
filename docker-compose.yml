@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./server/:/app/
+    environment:
+      - MONGODB_URI=${MONGODB_URI:-mongodb+srv://admin:ahmed@cluster0.i8mv0bl.mongodb.net/CarRentUser?appName=Cluster0}
+      - NODE_ENV=development
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - HOST=0.0.0.0   
+      - CHOKIDAR_USEPOLLING=true
+      - WATCHPACK_POLLING=true
+      - WDS_SOCKET_PORT=0
+    command: npm start  
+    depends_on:
+      - server
+
+networks:
+  default:
+    driver: bridge
